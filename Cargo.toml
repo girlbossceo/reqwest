@@ -140,7 +140,7 @@ tokio-util = { version = "0.7.1", default-features = false, features = ["codec",
 tokio-socks = { version = "0.5.1", optional = true }
 
 ## hickory-dns
-hickory-resolver = { version = "0.24", optional = true, features = ["tokio-runtime"] }
+hickory-resolver = { git = "https://github.com/hickory-dns/hickory-dns", rev = "94ac564c3f677e038f7255ddb762e9301d0f2c5d", optional = true, features = ["tokio-runtime"] }
 
 # HTTP/3 experimental support
 h3 = { version = "0.0.3", optional = true }
